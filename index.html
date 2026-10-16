@@ -23,71 +23,78 @@
       text-align: center;
       max-width: 380px;
       width: 90%;
+      margin: 20px 0;
     }
-    h1 {
-      font-size: 20px;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    p {
-      font-size: 14px;
-      color: #86868b;
-      margin-bottom: 20px;
-    }
-    h2 {
-      font-size: 13px;
-      color: #86868b;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin: 20px 0 10px 0;
-      text-align: left;
-    }
-    .btn {
-      display: block;
-      background-color: #0071e3;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 14px 16px;
-      border-radius: 12px;
-      font-weight: 500;
-      font-size: 14px;
-      margin-bottom: 12px;
-      transition: background-color 0.2s ease;
-    }
-    .btn:hover {
-      background-color: #0077ed;
-    }
-    .btn-secondary {
-      background-color: #e8e8ed;
-      color: #0071e3;
-    }
-    .btn-secondary:hover {
-      background-color: #dcdce1;
-    }
+    h1 { font-size: 20px; margin-bottom: 8px; font-weight: 600; }
+    p { font-size: 14px; color: #86868b; margin-bottom: 20px; }
+    h2 { font-size: 13px; color: #86868b; text-transform: uppercase; letter-spacing: 0.5px; margin: 20px 0 10px 0; text-align: left; border-bottom: 1px solid #e5e5ea; padding-bottom: 5px; }
+    .btn { display: block; width: 100%; box-sizing: border-box; background-color: #0071e3; color: #ffffff; text-decoration: none; padding: 14px 16px; border-radius: 12px; font-weight: 500; font-size: 14px; margin-bottom: 12px; transition: background-color 0.2s ease; border: none; cursor: pointer; }
+    .btn:hover { background-color: #0077ed; }
+    .btn-secondary { background-color: #e8e8ed; color: #0071e3; }
+    .btn-secondary:hover { background-color: #dcdce1; }
+    .form-group { text-align: left; margin-bottom: 12px; }
+    .form-group label { display: block; font-size: 12px; font-weight: 500; margin-bottom: 4px; color: #1d1d1f; }
+    .form-control { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #d2d2d7; border-radius: 8px; font-size: 14px; font-family: inherit; }
   </style>
 </head>
 <body>
 
   <div class="card">
     <h1>Mis Billetes iryo</h1>
-    <p>Haz clic en cualquier viaje para añadirlo directamente a tu Calendario de Apple:</p>
     
-    <h2>Octubre</h2>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje1">
-      Ida: 23/10 - Madrid ➔ Zaragoza (20:22)
-    </a>
-    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje2">
-      Vuelta: 25/10 - Zaragoza ➔ Madrid (20:21)
-    </a>
+    <h2>Viajes Guardados</h2>
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje1">Ida: 23/10 - Madrid ➔ Zaragoza</a>
+    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje2">Vuelta: 25/10 - Zaragoza ➔ Madrid</a>
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje3">Ida: 13/11 - Madrid ➔ Zaragoza</a>
+    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje4">Vuelta: 15/11 - Zaragoza ➔ Madrid</a>
 
-    <h2>Noviembre</h2>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje3">
-      Ida: 13/11 - Madrid ➔ Zaragoza (17:22)
-    </a>
-    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec?viaje=viaje4">
-      Vuelta: 15/11 - Zaragoza ➔ Madrid (20:21)
-    </a>
+    <h2 style="margin-top: 30px;">Añadir Nuevo Viaje</h2>
+    <form id="manualForm" onsubmit="generarViajeManual(event)">
+      <div class="form-group">
+        <label>Localizador</label>
+        <input type="text" id="m_loc" class="form-control" placeholder="Ej: ABCDEF" required>
+      </div>
+      <div class="form-group">
+        <label>Origen ➔ Destino</label>
+        <input type="text" id="m_ruta" class="form-control" placeholder="Ej: Madrid a Zaragoza" required>
+      </div>
+      <div class="form-group">
+        <label>Fecha y hora de Salida</label>
+        <input type="datetime-local" id="m_start" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label>Fecha y hora de Llegada</label>
+        <input type="datetime-local" id="m_end" class="form-control" required>
+      </div>
+      <button type="submit" class="btn" style="margin-top: 10px; background-color: #34c759;">Generar Archivo .ics</button>
+    </form>
   </div>
 
+  <script>
+    function formatICSDate(dateStr) {
+      // Convierte el input datetime-local a formato UTC necesario para el archivo ICS (YYYYMMDDTHHMMSSZ)
+      var d = new Date(dateStr);
+      return d.toISOString().replace(/[-:]/g, '').split('.')[0] + "Z";
+    }
+
+    function generarViajeManual(event) {
+      event.preventDefault();
+      
+      var baseUrl = "https://script.google.com/macros/s/AKfycbzKJXdOSi2nMbGTAF6_PD6KYGhBW7hvPJpvDkJXYJzDrsVrW7XndJjY_Wn7FLUoDmER/exec";
+      
+      var loc = document.getElementById('m_loc').value.toUpperCase();
+      var ruta = document.getElementById('m_ruta').value;
+      var startIcs = formatICSDate(document.getElementById('m_start').value);
+      var endIcs = formatICSDate(document.getElementById('m_end').value);
+
+      var title = encodeURIComponent("Tren iryo: " + ruta);
+      var desc = encodeURIComponent("DETALLES:\\n\\n• Localizador: " + loc + "\\n• Ruta: " + ruta);
+
+      var finalUrl = baseUrl + "?viaje=manual&title=" + title + "&start=" + startIcs + "&end=" + endIcs + "&desc=" + desc;
+      
+      // Redirigir para descargar
+      window.location.href = finalUrl;
+    }
+  </script>
 </body>
 </html>
