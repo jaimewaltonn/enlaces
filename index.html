@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Añadir a Calendario</title>
+  <title>Billetes iryo - Calendario</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -21,42 +21,56 @@
       border-radius: 18px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
       text-align: center;
-      max-width: 360px;
+      max-width: 380px;
       width: 90%;
     }
     h1 {
       font-size: 20px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       font-weight: 600;
     }
     p {
       font-size: 14px;
       color: #86868b;
       margin-bottom: 24px;
-      line-height: 1.4;
     }
     .btn {
-      display: inline-block;
+      display: block;
       background-color: #0071e3;
       color: #ffffff;
       text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 980px;
+      padding: 14px 20px;
+      border-radius: 12px;
       font-weight: 500;
       font-size: 15px;
+      margin-bottom: 12px;
       transition: background-color 0.2s ease;
     }
     .btn:hover {
       background-color: #0077ed;
+    }
+    .btn-secondary {
+      background-color: #e8e8ed;
+      color: #0071e3;
+    }
+    .btn-secondary:hover {
+      background-color: #dcdce1;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <h1>Añadir evento al calendario</h1>
-    <p>Haz clic en el botón de abajo para descargar o importar tu billete directamente en la app Calendario.</p>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbxbBdiV-39LxiWWtMW3wVEskw7YqsHEe9w4nYoBnJYm4YP0vsccic11x4C9hSJaVRDt/exec">Añadir a Apple Calendar</a>
+    <h1>Añadir Billetes a Calendario</h1>
+    <p>Selecciona el trayecto que deseas añadir a tu Calendario de Apple:</p>
+    
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbxUNXxkcCsHQeeHaIe_2t3raD2Bt0qffv6r40cYBPO3529SmBiSiyd9LDRInIPiJ2I/exec?viaje=ida">
+      Añadir Ida (23/10 - Madrid a Zaragoza)
+    </a>
+
+    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbxUNXxkcCsHQeeHaIe_2t3raD2Bt0qffv6r40cYBPO3529SmBiSiyd9LDRInIPiJ2I/exec?viaje=vuelta">
+      Añadir Vuelta (25/10 - Zaragoza a Madrid)
+    </a>
   </div>
 
 </body>
