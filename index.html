@@ -43,10 +43,10 @@
     <h1>Mis Billetes iryo</h1>
     
     <h2>Viajes Guardados</h2>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbzAz4Cx1Niivp-dg7QRu1b0tc1AMIKUuWX2lbSHjM3cTwazu37WOs_14w_UJUi_an2D/exec?viaje=viaje1">Ida: 23/10 - Madrid ➔ Zaragoza</a>
-    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzAz4Cx1Niivp-dg7QRu1b0tc1AMIKUuWX2lbSHjM3cTwazu37WOs_14w_UJUi_an2D/exec?viaje=viaje2">Vuelta: 25/10 - Zaragoza ➔ Madrid</a>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbzAz4Cx1Niivp-dg7QRu1b0tc1AMIKUuWX2lbSHjM3cTwazu37WOs_14w_UJUi_an2D/exec?viaje=viaje3">Ida: 13/11 - Madrid ➔ Zaragoza</a>
-    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzAz4Cx1Niivp-dg7QRu1b0tc1AMIKUuWX2lbSHjM3cTwazu37WOs_14w_UJUi_an2D/exec?viaje=viaje4">Vuelta: 15/11 - Zaragoza ➔ Madrid</a>
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbzCEZpj04sV92iO8RoXOeaVi94p_WP3OeYxPcSMtdMMgzneXwphTV4BcUwHM6bDdjGjKA/exec?viaje=viaje1">Ida: 23/10 - Madrid ➔ Zaragoza</a>
+    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzCEZpj04sV92iO8RoXOeaVi94p_WP3OeYxPcSMtdMMgzneXwphTV4BcUwHM6bDdjGjKA/exec/exec?viaje=viaje2">Vuelta: 25/10 - Zaragoza ➔ Madrid</a>
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbzCEZpj04sV92iO8RoXOeaVi94p_WP3OeYxPcSMtdMMgzneXwphTV4BcUwHM6bDdjGjKA/exec?viaje=viaje3">Ida: 13/11 - Madrid ➔ Zaragoza</a>
+    <a class="btn btn-secondary" href="https://script.google.com/macros/s/AKfycbzCEZpj04sV92iO8RoXOeaVi94p_WP3OeYxPcSMtdMMgzneXwphTV4BcUwHM6bDdjGjKA/exec?viaje=viaje4">Vuelta: 15/11 - Zaragoza ➔ Madrid</a>
 
     <h2 style="margin-top: 30px;">Añadir Nuevo Viaje</h2>
     <form id="manualForm" onsubmit="generarViajeManual(event)">
@@ -80,7 +80,7 @@
     function generarViajeManual(event) {
       event.preventDefault();
       
-      var baseUrl = "https://script.google.com/macros/s/AKfycbzAz4Cx1Niivp-dg7QRu1b0tc1AMIKUuWX2lbSHjM3cTwazu37WOs_14w_UJUi_an2D/exec";
+      var baseUrl = "https://script.google.com/macros/s/AKfycbzCEZpj04sV92iO8RoXOeaVi94p_WP3OeYxPcSMtdMMgzneXwphTV4BcUwHM6bDdjGjKA/exec";
       
       var loc = document.getElementById('m_loc').value.toUpperCase();
       var ruta = document.getElementById('m_ruta').value;
